@@ -15,6 +15,7 @@ albumList.push({
               name: 'Metallica',
               releaseDate: '1991, August 12',
               genres: [ 'heavy metal' ]
+              songs: []
             });
 albumList.push({
               artistName: 'The Prodigy',

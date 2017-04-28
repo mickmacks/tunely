@@ -89,12 +89,13 @@ function handleAlbumUpdatedResponse(data) {
 
   var albumId = data._id;
   // scratch this album from the page
-  $('[data-album-id=' + albumId + ']').remove();
+  console.log('TEEESSSTTTTTTING');
+  console.log($('[data-album-id=' + albumId + ']'));
   // and then re-draw it with the updates ;-)
   renderAlbum(data);
 
   // BONUS: scroll the change into view ;-)
-  $('[data-album-id=' + albumId + ']')[0].scrollIntoView();
+  $('[data-album-id=' + albumId + ']').scrollIntoView();
 }
 
 // when a delete button for an album is clicked
